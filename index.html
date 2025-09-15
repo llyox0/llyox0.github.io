@@ -5,111 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyrics - Il tuo mondo musicale</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Stili base (inclusi qui per comodità) */
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-            background-color: #1e1e1e;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #333;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff5722;
-        }
-
-        .hero {
-            background: url('music-hero.jpg') center/cover no-repeat;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 0 0 5px black;
-            font-size: 2.5em;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Lyrics</h1>
-        <p>Scopri il ritmo della vita</p>
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">Lyrics</a></h1>
+            <p>Scopri il ritmo della vita</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Notizie</a>
-        <a href="#">Recensioni</a>
-        <a href="#">Playlist</a>
-        <a href="#">Contatti</a>
+    <nav class="main-nav">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="testi.html">Testi</a>
+            <a href="classifiche.html">Classifiche</a>
+            <a href="cerca.html">Cerca</a>
+            <a href="contatti.html">Contatti</a>
+        </div>
     </nav>
 
-    <div class="hero">
-        scopri la tua musica
-    </div>
+    <section class="hero">
+        <div class="container">
+            <h2>Scopri la tua musica</h2>
+            <p>Testi, significati, classifiche e tanto altro.</p>
+        </div>
+    </section>
 
-    <main>
+    <main class="container">
         <section>
-            <h2>Ultime Notizie dal Mondo della Musica</h2>
-            <p>Rimani aggiornato con le novità sui tuoi artisti preferiti, nuovi album, concerti e molto altro!</p>
+            <h2>Ultime Notizie</h2>
+            <article>
+                <h3>Il nuovo album di Blanco conquista le classifiche</h3>
+                <p>Con il suo stile unico, Blanco torna con un disco che sta già facendo parlare di sé...</p>
+                <a href="#">Leggi di più</a>
+            </article>
+
+            <article>
+                <h3>Sanremo 2025: Tutti i Big in gara</h3>
+                <p>Scopri i nomi e le canzoni in gara nella nuova edizione del Festival...</p>
+                <a href="#">Scopri</a>
+            </article>
         </section>
 
         <section>
-            <h2>Recensioni e Approfondimenti</h2>
-            <p>Leggi recensioni approfondite di album, singoli e live performance, a cura dei nostri esperti di musica.</p>
-        </section>
-
-        <section>
-            <h2>Playlist Consigliate</h2>
-            <p>Scopri playlist curate per ogni momento della giornata: relax, workout, studio o festa.</p>
+            <h2>Playlist del Momento</h2>
+            <ul class="playlist-grid">
+                <li><a href="#">Top Italia 50</a></li>
+                <li><a href="#">Mood: Studio</a></li>
+                <li><a href="#">Vibes Notturne</a></li>
+                <li><a href="#">Fresh Rap</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 MusicaViva. Tutti i diritti riservati.</p>
+        <div class="container">
+            <p>&copy; 2025 Lyrics - Tutti i diritti riservati.</p>
+        </div>
     </footer>
 
 </body>
