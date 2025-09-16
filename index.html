@@ -3,72 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lyrics</title>
+  <title>Scena Rap Italiana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #111;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1b1b1b;
       color: #fff;
+      line-height: 1.6;
     }
 
     header {
       background-color: #fffc00;
-      color: #000;
-      padding: 20px;
+      color: #111;
       text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 600;
     }
 
     nav {
       background-color: #222;
       display: flex;
       justify-content: center;
-      padding: 10px 0;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 20px;
       font-weight: bold;
+      margin: 0 20px;
+      padding: 10px;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
       color: #fffc00;
     }
 
-    .container {
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fffc00;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
       padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+      text-align: center;
+      justify-items: center;
+      font-size: 1.2rem;
     }
 
-    .song {
-      margin-bottom: 60px;
-      border-bottom: 1px solid #333;
-      padding-bottom: 20px;
-    }
-
-    .song h2 {
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
       color: #fffc00;
-      font-size: 1.8rem;
     }
 
-    .artist {
-      font-style: italic;
+    .content p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
       color: #aaa;
+    }
+
+    .content ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .content ul li {
+      font-size: 1.2rem;
       margin-bottom: 10px;
     }
 
-    .lyrics {
-      white-space: pre-line;
-      line-height: 1.6;
+    .content ul li a {
+      text-decoration: none;
+      color: #fffc00;
+      transition: color 0.3s ease;
+    }
+
+    .content ul li a:hover {
+      color: #fff;
     }
 
     footer {
@@ -76,52 +126,56 @@
       color: #aaa;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      font-size: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Lyrics</h1>
-    <p>scopri la tua musica</p>
+    <h1>La Scena Rap Italiana</h1>
+    <p>Un viaggio tra i pionieri e le nuove leve del rap italiano</p>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Artisti</a>
-    <a href="#">Canzoni</a>
-    <a href="#">Contatti</a>
+    <a href="index.html">Home</a>
+    <a href="fabri-fibra.html">Fabri Fibra</a>
+    <a href="ghali.html">Ghali</a>
+    <a href="sfera-ebbasta.html">Sfera Ebbasta</a>
+    <a href="artie-5ive.html">Artie 5ive</a>
+    <a href="melons.html">Melons</a>
   </nav>
 
-  <div class="container">
-    <div class="song">
-      <h2>Mi fai volare</h2>
-      <div class="artist">di Lil Trapboy</div>
-      <div class="lyrics">
-        Yeah, mi fai volare (skrrt skrrt)<br>
-        Notti in bianco sopra al mio blocco<br>
-        Fumo e sogno di scappare<br>
-        Ma il passato mi tiene stretto (uh)
-      </div>
+  <div class="content">
+    <div>
+      <h2>Un'era di cambiamento</h2>
+      <p>Il rap italiano ha attraversato enormi trasformazioni dalla sua nascita negli anni '90, diventando una delle voci più potenti della cultura giovanile. Da <strong>Fabri Fibra</strong>, che ha portato la scena mainstream, a <strong>Sfera Ebbasta</strong>, <strong>Ghali</strong>, <strong>Artie 5ive</strong> e <strong>Melons</strong>, che hanno ridefinito il suono e la visione del genere. Ogni artista ha lasciato un'impronta unica.</p>
     </div>
 
-    <div class="song">
-      <h2>Strada mia</h2>
-      <div class="artist">di Dark Side</div>
-      <div class="lyrics">
-        Cammino solo, la strada è mia (yeh)<br>
-        Non ho padroni, solo poesia<br>
-        Ogni ferita è una melodia<br>
-        Che suona forte nell'anarchia
-      </div>
+    <div>
+      <h3>Le icone del rap italiano</h3>
+      <ul>
+        <li><a href="fabri-fibra.html">Fabri Fibra</a></li>
+        <li><a href="ghali.html">Ghali</a></li>
+        <li><a href="sfera-ebbasta.html">Sfera Ebbasta</a></li>
+        <li><a href="artie-5ive.html">Artie 5ive</a></li>
+        <li><a href="melons.html">Melons</a></li>
+      </ul>
     </div>
   </div>
 
   <footer>
-    © 2025 Lyrics - Tutti i diritti riservati.
+    © 2025 Trap Genius - Tutti i diritti riservati.
   </footer>
 
 </body>
 </html>
-
