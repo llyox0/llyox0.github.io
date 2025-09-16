@@ -1,69 +1,127 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyrics - Il tuo mondo musicale</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trap Genius</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #fffc00;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fffc00;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .song {
+      margin-bottom: 60px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+    }
+
+    .song h2 {
+      color: #fffc00;
+      font-size: 1.8rem;
+    }
+
+    .artist {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .lyrics {
+      white-space: pre-line;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <h1><a href="index.html">Lyrics</a></h1>
-            <p>Scopri il ritmo della vita</p>
-        </div>
-    </header>
+  <header>
+    <h1>Trap Genius</h1>
+    <p>I testi e significati delle canzoni rap e trap</p>
+  </header>
 
-    <nav class="main-nav">
-        <div class="container">
-            <a href="index.html">Home</a>
-            <a href="testi.html">Testi</a>
-            <a href="classifiche.html">Classifiche</a>
-            <a href="cerca.html">Cerca</a>
-            <a href="contatti.html">Contatti</a>
-        </div>
-    </nav>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Artisti</a>
+    <a href="#">Canzoni</a>
+    <a href="#">Contatti</a>
+  </nav>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Scopri la tua musica</h2>
-            <p>Testi, significati, classifiche e tanto altro.</p>
-        </div>
-    </section>
+  <div class="container">
+    <div class="song">
+      <h2>Mi fai volare</h2>
+      <div class="artist">di Lil Trapboy</div>
+      <div class="lyrics">
+        Yeah, mi fai volare (skrrt skrrt)<br>
+        Notti in bianco sopra al mio blocco<br>
+        Fumo e sogno di scappare<br>
+        Ma il passato mi tiene stretto (uh)
+      </div>
+    </div>
 
-    <main class="container">
-        <section>
-            <h2>Ultime Notizie</h2>
-            <article>
-                <h3>Il nuovo album di Blanco conquista le classifiche</h3>
-                <p>Con il suo stile unico, Blanco torna con un disco che sta già facendo parlare di sé...</p>
-                <a href="#">Leggi di più</a>
-            </article>
+    <div class="song">
+      <h2>Strada mia</h2>
+      <div class="artist">di Dark Side</div>
+      <div class="lyrics">
+        Cammino solo, la strada è mia (yeh)<br>
+        Non ho padroni, solo poesia<br>
+        Ogni ferita è una melodia<br>
+        Che suona forte nell'anarchia
+      </div>
+    </div>
+  </div>
 
-            <article>
-                <h3>Sanremo 2025: Tutti i Big in gara</h3>
-                <p>Scopri i nomi e le canzoni in gara nella nuova edizione del Festival...</p>
-                <a href="#">Scopri</a>
-            </article>
-        </section>
-
-        <section>
-            <h2>Playlist del Momento</h2>
-            <ul class="playlist-grid">
-                <li><a href="#">Top Italia 50</a></li>
-                <li><a href="#">Mood: Studio</a></li>
-                <li><a href="#">Vibes Notturne</a></li>
-                <li><a href="#">Fresh Rap</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Lyrics - Tutti i diritti riservati.</p>
-        </div>
-    </footer>
+  <footer>
+    © 2025 Trap Genius - Tutti i diritti riservati.
+  </footer>
 
 </body>
 </html>
+
