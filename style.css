@@ -70,7 +70,7 @@
       transform: scaleX(1);
     }
 
-    nav a .active{
+    nav a.active{
       content: '';
       position: absolute;
       left: 0;
