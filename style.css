@@ -52,7 +52,6 @@
 
     nav a:hover {
       color: #fffc00;
-      background-color: #0b6b6b;
     }
 
     nav a::after {
