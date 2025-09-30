@@ -110,7 +110,11 @@
     }
 
     #giallo {
-      color:red;
+      color:#fffc00;
+    }
+
+    #bianco {
+      color:#fff;
     }
 
     .content table tr {
@@ -120,7 +124,6 @@
 
     .content table td {
       text-decoration: none;
-      color: #fff;
       transition: color 0.3s ease;
     }
 
