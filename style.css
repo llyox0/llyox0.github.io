@@ -110,6 +110,10 @@
       color: #fffc00;
     }
 
+    #giallo {
+      color:red;
+    }
+
     .content table tr {
       font-size: 1.2rem;
       margin-bottom: 10px;
