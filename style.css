@@ -104,24 +104,24 @@
       color: #aaa;
     }
 
-    .content ul {
+    .content table {
       list-style-type: none;
       padding: 0;
       margin-top: 20px;
     }
 
-    .content ul li {
+    .content table tr {
       font-size: 1.2rem;
       margin-bottom: 10px;
     }
 
-    .content ul li a {
+    .content table td {
       text-decoration: none;
       color: #fffc00;
       transition: color 0.3s ease;
     }
 
-    .content ul li a:hover {
+    .content table td:hover {
       color: #fff;
     }
 
