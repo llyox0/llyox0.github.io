@@ -108,6 +108,7 @@
       list-style-type: none;
       padding: 0;
       margin-top: 20px;
+      color: #fffc00;
     }
 
     .content table tr {
@@ -117,7 +118,7 @@
 
     .content table td {
       text-decoration: none;
-      color: #fffc00;
+      color: #fff;
       transition: color 0.3s ease;
     }
 
