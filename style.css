@@ -135,12 +135,12 @@ color: #fff;
   color:#fffc00;
 }
 
-.giallo {
+.content table td a {
   color: #fff;
   text-decoration: none;
 }
 
-.giallo:hover {
+.content table td a:hover {
   color: #fffc00;
 }
 
