@@ -135,12 +135,12 @@ color: #fff;
   color:#fffc00;
 }
 
-#giallo {
+.giallo {
   color: #fff;
   text-decoration: none;
 }
 
-#giallo:hover {
+.giallo:hover {
   color: #fffc00;
 }
 
