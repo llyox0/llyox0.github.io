@@ -135,6 +135,11 @@ color: #fff;
   color:#fffc00;
 }
 
+#giallo {
+  color: #fff;
+  text-decoration: none;
+}
+
 #giallo:hover {
   color: #fffc00;
 }
