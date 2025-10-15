@@ -29,15 +29,44 @@ header p {
   font-weight: 600;
 }
 
-nav {
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+#menu-toggle {
+  display: none;
 }
 
-nav a {
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 3px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+
+}
+
+nav {
+  background-color: #222;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  min-height: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -48,11 +77,11 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+.menu a:hover {
   color: #fffc00;
 }
 
-nav a::after {
+.menu a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -64,15 +93,15 @@ nav a::after {
   transition: transform 0.3s ease;
 }
 
-nav a:hover::after {
+.menu a:hover::after {
   transform: scaleX(1);
 }
 
-nav a.active {
+.menu a.active {
   color: #fffc00;
 }
 
-nav a.active::after {
+.menu a.active::after {
   transform: scaleX(1);
 }
 
@@ -144,13 +173,18 @@ nav a.active::after {
 }
 
 .content table {
-  padding:0;
+  padding: 0;
   margin-top: 20px;
   color: #fff;
 }
 
 .content table th {
   color: #fffc00;
+  padding: 5px 10px;
+}
+
+.content table td {
+  padding: 5px 10px;
 }
 
 .content table td a {
@@ -244,35 +278,40 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .footer-content {
+
+  .hamburger {
+    display: flex;
+  }
+  
+  .menu {
+    display: none;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .menu a {
+    margin: 10px 0;
+    padding: 15px 20px;
     text-align: center;
-    gap: 40px;
+    display: block;
+    border-bottom: 1px solid #333;
   }
   
-  .footer-section {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  footer {
-    padding: 30px 15px 15px;
+  .menu a:last-child {
+    border-bottom: none;
   }
   
-  .footer-content {
-    gap: 30px;
+  #menu-toggle:checked ~ .menu {
+    display: flex;
   }
-}
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
+  
   .content {
     flex-direction: column;
     text-align: center;
@@ -284,35 +323,22 @@ footer {
     font-size: 2.5rem;
   }
   
-  nav {
-    flex-wrap: wrap;
-  }
-  
-  nav a {
-    margin: 0 10px;
-  }
-  
   .footer-content {
-    text-align: center;
-    padding: 0 15px;
-  }
-  
-  .footer-links {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
+    text-align: center;
+    gap: 40px;
   }
   
-  .footer-links a {
-    margin: 5px 0;
+  .footer-section {
+    width: 100%;
+  }
+  
+  .social-links {
+    align-items: center;
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding-bottom: 70px;
-  }
-  
   .content {
     padding-bottom: 50px;
     min-height: 40vh;
@@ -322,16 +348,15 @@ footer {
     font-size: 2rem;
   }
   
-  nav a {
-    font-size: 1rem;
-    margin: 0 5px;
-  }
-  
   footer {
-    padding: 15px;
+    padding: 30px 15px 15px;
   }
   
   .footer-content {
-    padding: 0 10px;
+    gap: 30px;
+  }
+  
+  .menu a {
+    font-size: 1rem;
   }
 }
