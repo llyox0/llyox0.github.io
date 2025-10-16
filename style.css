@@ -122,7 +122,7 @@ nav {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(41, 41, 41, 0.3);
+  box-shadow: 0 0px 24px rgba(41, 41, 41, 0.3);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   border: 3px solid #000;
 }
@@ -209,7 +209,7 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 60px;
 }
@@ -243,7 +243,7 @@ footer {
 .social-links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
   align-items: center;
 }
 
