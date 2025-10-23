@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatti - Scena Rap Italiana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CONTATTI</h1>
+    <p>Scrivici per suggerimenti, collaborazioni o informazioni</p>
+  </header>
+
+  <nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="fabri-fibra.html">Fabri Fibra</a>
+      <a href="ghali.html">Ghali</a>
+      <a href="sfera-ebbasta.html">Sfera Ebbasta</a>
+      <a href="artie-5ive.html">Artie 5ive</a>
+      <a href="melons.html">Melons</a>
+      <a class="active" href="contatti.html">Contatti</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="contact-form">
+      <h2>Inviaci un messaggio</h2>
+      <p>Hai domande, suggerimenti o vuoi collaborare con noi? Compila il form qui sotto e ti risponderemo al più presto!</p>
+      
+      <form action="https://formspree.io/f/mzzjlqbb" method="POST" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="cognome">Cognome</label>
+            <input type="text" id="cognome" name="cognome" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="messaggio">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Invia Messaggio</button>
+      </form>
+    </div>
+  </div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Scena Rap Italiana</h3>
+      <p>Esplora l'evoluzione del rap italiano dai pionieri alle nuove generazioni</p>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Social</h4>
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <a href="mailto:info@scenerapitaliana.it">Email</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Scena Rap Italiana - Tutti i diritti riservati</p>
+  </div>
+</footer>
+
+</body>
+</html>
